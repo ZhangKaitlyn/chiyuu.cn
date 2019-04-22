@@ -31,3 +31,9 @@
 .home-page-contacts img{
   margin-top: 20px;
 }
+.home-page-background{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

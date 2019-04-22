@@ -1799,3 +1799,109 @@ hostname: kaitlyn-hp
 2019-04-09 19:06:59,395 INFO 9528 [-/127.0.0.1/-/529ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29389 - 528 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
 2019-04-09 19:06:59,895 INFO 9528 [-/127.0.0.1/-/4ms GET /public/0a287c473889a0fadb63.hot-update.json] [access] 127.0.0.1: - GET /public/0a287c473889a0fadb63.hot-update.json HTTP/404 - http://127.0.0.1:7001/ed/kaitlyn/dfhhhhh/index 0 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
 2019-04-09 19:06:59,900 INFO 9528 [-/127.0.0.1/-/3ms GET /public/0a287c473889a0fadb63.hot-update.json] [access] 127.0.0.1: - GET /public/0a287c473889a0fadb63.hot-update.json HTTP/404 - http://127.0.0.1:7001/vp 0 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:12:46,090 INFO 6112 [-/127.0.0.1/-/601ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29389 - 590 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:34:33,747 INFO 6112 [-/127.0.0.1/-/46ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29432 - 45 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:36:08,658 ERROR 6112 [-/127.0.0.1/-/26ms GET /] nodejs.ReferenceError: document is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:36:54,319 ERROR 6112 [-/127.0.0.1/-/42ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:36:58,245 ERROR 6112 [-/127.0.0.1/-/19ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:37:01,049 ERROR 6112 [-/127.0.0.1/-/14ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:44:43,420 INFO 6112 [-/127.0.0.1/-/46ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29432 - 46 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:45:36,800 INFO 6112 [-/127.0.0.1/-/53ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29432 - 52 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:45:42,903 INFO 6112 [-/127.0.0.1/-/69ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29432 - 69 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:46:04,988 INFO 6112 [-/127.0.0.1/-/40ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29438 - 40 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-10 19:46:30,988 INFO 6112 [-/127.0.0.1/-/49ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29438 - 48 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:09:03,178 INFO 11164 [-/127.0.0.1/-/455ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29371 - 446 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:12:17,019 INFO 11164 [-/127.0.0.1/-/49ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 48 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:13:21,165 INFO 11164 [-/127.0.0.1/-/50ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 50 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:13:35,609 INFO 11164 [-/127.0.0.1/-/70ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 70 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:13:48,718 INFO 11164 [-/127.0.0.1/-/54ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 54 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:14:10,753 INFO 11164 [-/127.0.0.1/-/44ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 44 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:14:24,157 INFO 11164 [-/127.0.0.1/-/34ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 34 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:14:38,976 INFO 11164 [-/127.0.0.1/-/45ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 44 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:15:36,751 INFO 11164 [-/127.0.0.1/-/45ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 44 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:16:03,382 INFO 11164 [-/127.0.0.1/-/41ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 41 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:16:15,685 INFO 11164 [-/127.0.0.1/-/42ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 42 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:16:36,465 INFO 11164 [-/127.0.0.1/-/42ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 42 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:16:49,346 INFO 11164 [-/127.0.0.1/-/49ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 49 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:17:00,037 INFO 11164 [-/127.0.0.1/-/50ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 49 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36
+2019-04-22 19:17:29,968 INFO 11164 [-/127.0.0.1/-/44ms GET /] [access] 127.0.0.1: - GET / HTTP/200 29395 - 42 - Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36

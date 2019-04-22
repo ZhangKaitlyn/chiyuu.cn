@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel, Tooltip } from 'antd'
+import bgCreator from '../../lib/canvas-nest-bg'
 import './home.css'
 import Intro from './component/Intro'
 import Works from './component/Works'
@@ -19,6 +20,7 @@ export default class Home extends Component {
     this.handleWheelScroll = this.handleWheelScroll.bind(this)
   }
   componentDidMount() {
+    bgCreator()
     console.log('----componentDidMount-----')
   }
 
@@ -34,6 +36,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="home-page" onWheel={this.handleWheelScroll}>
+        <canvas className="home-page-fixed home-page-background" id="stage"></canvas>
         <img className="home-page-logo home-page-fixed" src={logoImg} alt="" />
         <img className="home-page-menu home-page-fixed" src={menuImg} alt="" />
         <div className="home-page-contacts home-page-fixed">

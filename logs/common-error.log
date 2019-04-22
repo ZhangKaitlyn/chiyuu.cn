@@ -248,3 +248,87 @@ name: "MODULE_NOT_FOUNDError"
 pid: 12836
 hostname: kaitlyn-hp
 
+2019-04-10 19:36:08,657 ERROR 6112 [-/127.0.0.1/-/26ms GET /] nodejs.ReferenceError: document is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:36:54,318 ERROR 6112 [-/127.0.0.1/-/42ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:36:58,245 ERROR 6112 [-/127.0.0.1/-/19ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+
+2019-04-10 19:37:01,049 ERROR 6112 [-/127.0.0.1/-/14ms GET /] nodejs.ReferenceError: window is not defined
+    at Object.eval (webpack:///./app/web/lib/canvas-nest-bg.js?:6:13)
+    at eval (webpack:///./app/web/lib/canvas-nest-bg.js?:153:30)
+    at Object../app/web/lib/canvas-nest-bg.js (evalmachine.<anonymous>:251:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?:12:77)
+    at eval (webpack:///./app/web/page/home/home.jsx?:173:30)
+    at Module../app/web/page/home/home.jsx (evalmachine.<anonymous>:412:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at Module.eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:5:104)
+    at eval (webpack:///./app/web/page/home/home.jsx?./node_modules/babel-loader/lib!./app/web/framework/entry/server-loader.js:72:30)
+    at Module../node_modules/babel-loader/lib/index.js!./app/web/framework/entry/server-loader.js!./app/web/page/home/home.jsx (evalmachine.<anonymous>:504:1)
+    at __webpack_require__ (evalmachine.<anonymous>:20:30)
+    at evalmachine.<anonymous>:84:18
+    at evalmachine.<anonymous>:87:10
+    at D:\kaitlyn\chiyuu.cn\node_modules\egg-webpack-react\app.js:23:37
+    at Generator.next (<anonymous>)
+
+pid: 6112
+hostname: kaitlyn-hp
+

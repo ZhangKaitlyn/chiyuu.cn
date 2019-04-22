@@ -142,3 +142,15 @@
 2019-04-09 19:06:50,127 INFO 15056 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
 2019-04-09 19:06:53,718 INFO 9528 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js
 2019-04-09 19:06:53,718 INFO 9528 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-04-10 19:12:35,121 INFO 13700 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-04-10 19:12:35,121 INFO 13700 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-04-10 19:12:35,641 INFO 12320 [Timer] D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 17244360ms at 2019-04-11 00:00:00.001
+2019-04-10 19:12:35,641 INFO 12320 [Timer] D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 17245359ms at 2019-04-11 00:00:01.000
+2019-04-10 19:12:38,651 INFO 6112 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-04-10 19:12:38,651 INFO 6112 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-04-22 19:08:49,853 INFO 10116 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-04-22 19:08:49,853 INFO 10116 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2019-04-22 19:08:50,356 INFO 10776 [Timer] D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js next time will execute after 17469645ms at 2019-04-23 00:00:00.001
+2019-04-22 19:08:50,357 INFO 10776 [Timer] D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js next time will execute after 17470644ms at 2019-04-23 00:00:01.001
+2019-04-22 19:08:53,457 INFO 11164 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\clean_log.js
+2019-04-22 19:08:53,457 INFO 11164 [egg-schedule]: register schedule D:\kaitlyn\chiyuu.cn\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
