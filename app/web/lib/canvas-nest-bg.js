@@ -67,7 +67,7 @@ const bgCreator = function() {
     ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
 
     // choose the dot color
-    ctx.fillStyle = '#fff'
+    ctx.fillStyle = 'rgba(255,255,255,.5)'
 
     // for each line
     for (var i = 0; i < dots.length; i++) {
@@ -77,7 +77,7 @@ const bgCreator = function() {
 
       ctx.beginPath()
       ctx.moveTo(s.x, s.y)
-      ctx.lineTo(s.x + v.x, s.y + v.y)
+      // ctx.lineTo(s.x + v.x, s.y + v.y)
       ctx.strokeStyle = '#333'
       ctx.lineWidth = 1 * ratio
       ctx.stroke()
@@ -100,7 +100,7 @@ const bgCreator = function() {
     var d = getDistance(dot, mouse)
 
     // reverse the distance, so that the number is bigger when the mouse is closer.
-    dot.size = (200 - d) / 20
+    dot.size = (200 - d) / 40
     dot.size = dot.size < 1 ? 1 : dot.size
 
     dot.angle = getAngle(dot, mouse)

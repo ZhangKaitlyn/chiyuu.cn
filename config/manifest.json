@@ -9,9 +9,11 @@
   "media/music1.mp3": "/public/media/music1.mp3",
   "media/music2.mp3": "/public/media/music2.mp3",
   "media/music3.mp3": "/public/media/music3.mp3",
+  "vendor.js": "/public/js/vendor.js",
   "deps": {
     "home/home.js": {
       "js": [
+        "/public/js/vendor.js",
         "/public/js/runtime.js",
         "/public/js/chunk/home/home.js"
       ],
