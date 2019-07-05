@@ -1,0 +1,12 @@
+.footerComp {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+}
+.contactRow img + img {
+  margin-left: 32px;
+}
+.recordNoRow {
+  color: rgba(29, 29, 29, 0.5);
+  margin: 48px 0 8px;
+}
