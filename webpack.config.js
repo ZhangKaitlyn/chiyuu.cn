@@ -12,6 +12,9 @@ module.exports = {
     '@': 'app/web'
   },
   dll: ['react', 'react-dom'],
+  cssModule: {
+    include: 'app/web/asset/css/module'
+  },
   loaders: {},
   plugins: {},
   done() {

@@ -27,6 +27,7 @@
     "lodash": "^4.17.4",
     "mockjs": "^1.0.1-beta3",
     "moment": "^2.17.1",
+    "node-sass": "^4.12.0",
     "react": "^16.0.0",
     "react-audio-player": "^0.11.0",
     "react-dom": "^16.0.0",
@@ -35,7 +36,8 @@
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2"
+    "redux": "^3.7.2",
+    "sass-loader": "^7.1.0"
   },
   "devDependencies": {
     "autod-egg": "^1.0.0",
