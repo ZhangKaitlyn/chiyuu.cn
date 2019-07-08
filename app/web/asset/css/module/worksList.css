@@ -1,0 +1,48 @@
+.worksList {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.classifiesList {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.classifiesList li {
+  display: inline-block;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+.classifiesList li + li {
+  margin-left: 48px;
+}
+
+.worksBoxList {
+  margin-top: 48px;
+}
+
+.worksItem {
+  margin-bottom: 32px;
+}
+.worksCover {
+  position: relative;
+}
+.coverImg {
+  width: 100%;
+}
+.worksType {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.worksTitle {
+  text-align: center;
+  font-size: 16px;
+  color: #1d1d1d;
+  margin-top: 12px;
+}
+.worksInfo {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(29, 29, 29, 0.5);
+}
