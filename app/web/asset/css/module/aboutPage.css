@@ -1,0 +1,45 @@
+.aboutPage {
+  color: #1d1d1d;
+}
+.content{
+    margin-bottom: 32px;
+}
+.imgZone {
+  text-align: right;
+  padding: 8px 32px 0;
+}
+.infoZone {
+  padding: 0 32px;
+}
+.imgZone img {
+  max-width: 100%;
+  height: auto;
+}
+.pageTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.item {
+  margin-bottom: 64px;
+}
+.itemTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+.infoItem {
+  margin-bottom: 40px;
+}
+.infoTitle {
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 12px;
+}
+.flexLeft {
+  flex: 1;
+}
+.intro {
+  font-size: 14px;
+  color: rgba(29, 29, 29, 0.5);
+}
