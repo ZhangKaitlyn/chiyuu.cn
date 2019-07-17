@@ -23,6 +23,7 @@
 
 .worksItem {
   margin-bottom: 32px;
+  cursor: pointer;
 }
 .worksCover {
   position: relative;
@@ -45,4 +46,29 @@
   text-align: center;
   font-size: 12px;
   color: rgba(29, 29, 29, 0.5);
+}
+
+.detailModal :global(.ant-modal-header) {
+  border-bottom: none;
+  padding: 36px 32px 8px;
+}
+.detailModal :global(.ant-modal-title) {
+  font-size: 28px;
+  color: #1d1d1d;
+}
+.detailModal :global(.ant-modal-body) {
+  padding: 0 32px 32px;
+}
+.detailModal :global(.info) {
+  font-size: 14px;
+  color: rgba(29, 29, 29, 0.5);
+  margin-bottom: 64px;
+}
+.detailModal :global(.preview) {
+  width: 100%;
+  height: auto;
+}
+.detailModalType {
+  margin-left: 16px;
+  vertical-align: bottom;
 }

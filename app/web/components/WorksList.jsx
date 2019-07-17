@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'antd';
+import { Row, Col, Modal } from 'antd';
 import worksListStyle from 'asset/css/module/worksList.css'
 import WorksCoverImg from 'asset/images/work_1.png'
 import GIFImg from 'asset/images/GIF.png'
@@ -9,8 +9,12 @@ import MultipleImg from 'asset/images/Multiple.png'
 export default class WorksList extends Component {
   constructor(props) {
     super(props);
+    this.toWorkDetailPage = this.toWorkDetailPage.bind(this);
+    this.showWorkDetailDialog = this.showWorkDetailDialog.bind(this);
     this.state = {
       testData: 'test',
+      activeWork: {},
+      isWorkDetailDialogVisible: false,
       classifies: [{
         type: 'all',
         value: '全部'
@@ -48,29 +52,58 @@ export default class WorksList extends Component {
     }
   }
 
+  toWorkDetailPage() {
+    console.log('toWorkDetailPage')
+  }
+  showWorkDetailDialog() {
+    console.log('showWorkDetailDialog')
+    this.setState({
+      isWorkDetailDialogVisible: true
+    })
+  }
+  showWorkDetail(workDetail) {
+    this.setState({
+      activeWork: workDetail
+    })
+    let { type } = workDetail
+    if (type === 'multiple') {
+      this.toWorkDetailPage()
+      return
+    }
+    this.showWorkDetailDialog()
+  }
+  hideWorkDetailDialog() {
+    this.setState({
+      isWorkDetailDialogVisible: false
+    })
+  }
+
   render() {
     const classifiesList = this.state.classifies.map(({ type, value }) => {
       return <li key={type}>{value}</li>
     })
     function WorkCover(props) {
-      let type = props.type
+      let { type, classProp } = props
+      let resultClassName = classProp || worksListStyle.worksType
+      console.log(classProp, '---', resultClassName)
       if (type == 'gif') {
-        return <img className={worksListStyle.worksType} src={GIFImg} alt="" />
+        return <img className={resultClassName} src={GIFImg} alt="" />
       }
       else if (type == 'multiple') {
-        return <img className={worksListStyle.worksType} src={MultipleImg} alt="" />
+        return <img className={resultClassName} src={MultipleImg} alt="" />
       }
       else if (type == 'video') {
-        return <img className={worksListStyle.worksType} src={VideoImg} alt="" />
+        return <img className={resultClassName} src={VideoImg} alt="" />
       }
       else {
         return <span></span>
 
       }
     }
-    const worksListDom = this.state.works.map(({ type, title, info, id }) => {
+    const worksListDom = this.state.works.map((workDetail) => {
+      let { type, title, info, id } = workDetail
       return (
-        <Col className={worksListStyle.worksItem} span={6} key={id}>
+        <Col className={worksListStyle.worksItem} span={6} key={id} onClick={this.showWorkDetail.bind(this, workDetail)}>
           <div className={worksListStyle.worksCover}>
             <img className={worksListStyle.coverImg} src={WorksCoverImg} alt="" />
             <WorkCover type={type}></WorkCover>
@@ -89,6 +122,22 @@ export default class WorksList extends Component {
           <li>旧品</li>
         </ul>
         <Row className={worksListStyle.worksBoxList} gutter={16}>{worksListDom}</Row>
+        <Modal
+          width={864}
+          wrapClassName={worksListStyle.detailModal}
+          title={
+            <div>{this.state.activeWork.title}
+              <WorkCover type={this.state.activeWork.type} classProp={worksListStyle.detailModalType}></WorkCover>
+            </div>
+          }
+          visible={this.state.isWorkDetailDialogVisible}
+          footer={null}
+          onCancel={this.hideWorkDetailDialog.bind(this)}
+          destroyOnClose={true}
+        >
+          <div className="info">{this.state.activeWork.info}</div>
+          <img className="preview" src={WorksCoverImg} alt="" />
+        </Modal>
       </div>
     )
   }
