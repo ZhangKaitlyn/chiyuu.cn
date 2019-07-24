@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col, Modal } from 'antd';
+// import { createStore } from 'redux'
+// import counter from './reducers'
 import worksListStyle from 'asset/css/module/worksList.css'
 import WorksCoverImg from 'asset/images/work_1.png'
 import GIFImg from 'asset/images/GIF.png'
@@ -7,8 +9,11 @@ import VideoImg from 'asset/images/Video.png'
 import MultipleImg from 'asset/images/Multiple.png'
 
 export default class WorksList extends Component {
+
   constructor(props) {
     super(props);
+    console.log(props)
+    props.getWorks()
     this.toWorkDetailPage = this.toWorkDetailPage.bind(this);
     this.showWorkDetailDialog = this.showWorkDetailDialog.bind(this);
     this.state = {
@@ -37,6 +42,7 @@ export default class WorksList extends Component {
         type: 'photography',
         value: '摄影'
       }],
+      worksState: props.works,
       works: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(index => {
         return {
           id: index,
@@ -50,6 +56,10 @@ export default class WorksList extends Component {
     function getRandomInt(max) {
       return Math.floor(Math.random() * Math.floor(max));
     }
+  }
+  componentDidMount(props) {
+    // props.getWorks()
+    // this.setState(works, store)
   }
 
   toWorkDetailPage() {
