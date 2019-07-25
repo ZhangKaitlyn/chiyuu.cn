@@ -1,19 +1,20 @@
 import { connect } from 'react-redux'
 import WorksList from '../components/WorksList'
+import { getWorks } from '@/actions'
 
 const mapStateToProps = state => ({
-    works: getVisibleWorks(state.works, state.workTypeFilter)
+  works: state.works
 })
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        getWorks: () => {
-            dispatch(getWorks())
-        }
+const mapDispatchToProps = dispatch => {
+  return {
+    getWorks: () => {
+      dispatch(getWorks())
     }
+  }
 }
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(WorksList)

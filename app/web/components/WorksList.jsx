@@ -42,24 +42,11 @@ export default class WorksList extends Component {
         type: 'photography',
         value: '摄影'
       }],
-      worksState: props.works,
-      works: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map(index => {
-        return {
-          id: index,
-          type: ['gif', 'multiple', 'video', 'image'][getRandomInt(4)],
-          title: 'Hello Dribble' + index,
-          info: 'UI - 概念' + index
-        }
-      })
+      worksState: props.works
     };
-
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * Math.floor(max));
-    }
   }
-  componentDidMount(props) {
-    // props.getWorks()
-    // this.setState(works, store)
+  componentDidMount() {
+    this.props.getWorks()
   }
 
   toWorkDetailPage() {
@@ -110,7 +97,7 @@ export default class WorksList extends Component {
 
       }
     }
-    const worksListDom = this.state.works.map((workDetail) => {
+    const worksListDom = this.props.works.map((workDetail) => {
       let { type, title, info, id } = workDetail
       return (
         <Col className={worksListStyle.worksItem} span={6} key={id} onClick={this.showWorkDetail.bind(this, workDetail)}>
