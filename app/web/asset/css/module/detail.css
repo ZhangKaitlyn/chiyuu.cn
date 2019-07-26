@@ -1,0 +1,22 @@
+.container{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 36px 0 128px;
+}
+.title{
+  font-size: 28px;
+  color: #1d1d1d;
+  font-weight: bold;
+}
+.title img{
+  margin-left: 12px;
+}
+.info{
+  font-size: 14px;
+  color: rgba(0,0,0,.5);
+  margin-bottom: 64px;
+}
+.cover{
+  width: 100%;
+  height: auto;
+}

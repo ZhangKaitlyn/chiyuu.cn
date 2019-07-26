@@ -4,5 +4,9 @@ module.exports = app => {
       const { ctx } = this
       await ctx.renderClient('works/works.js')
     }
+    async detail() {
+      const { ctx } = this
+      await ctx.renderClient('detail/detail.js')
+    }
   }
 }

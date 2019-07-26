@@ -12,7 +12,6 @@ export default class WorksList extends Component {
 
   constructor(props) {
     super(props);
-    console.log(props)
     props.getWorks()
     this.toWorkDetailPage = this.toWorkDetailPage.bind(this);
     this.showWorkDetailDialog = this.showWorkDetailDialog.bind(this);
