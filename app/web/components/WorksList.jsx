@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Row, Col, Modal } from 'antd';
-// import { createStore } from 'redux'
-// import counter from './reducers'
+import QueueAnim from 'rc-queue-anim';
+import TweenOne from 'rc-tween-one';
 import worksListStyle from 'asset/css/module/worksList.css'
 import WorksCoverImg from 'asset/images/work_1.png'
 import GIFImg from 'asset/images/GIF.png'
@@ -111,13 +111,23 @@ export default class WorksList extends Component {
     })
     return (
       <div className={worksListStyle.worksList}>
-        <ul className={worksListStyle.classifiesList}>
-          {classifiesList}
-          <li>|</li>
-          <li>新作</li>
-          <li>旧品</li>
-        </ul>
-        <Row className={worksListStyle.worksBoxList} gutter={16}>{worksListDom}</Row>
+        <div className={worksListStyle.combineBox} key='WorksAppComp3'>
+          <div className={worksListStyle.combine}>
+            <ul className={worksListStyle.classifiesList}>
+              {classifiesList}
+              <li>|</li>
+              <li>新作</li>
+              <li>旧品</li>
+            </ul>
+            <TweenOne
+              className={worksListStyle.combineBar}
+              animation={[{ duration: 500, width: 0, x: 0, type: 'from', ease: 'easeInOutExpo' }, { duration: 500, width: 0, x: 675, type: 'to', ease: 'easeInOutExpo' }]}
+            />
+          </div>
+        </div>
+        <Row className={worksListStyle.worksBoxList} gutter={16}>
+          <QueueAnim duration={1000} interval={500} delay={1000}>{worksListDom}</QueueAnim>
+        </Row>
         <Modal
           width={864}
           wrapClassName={worksListStyle.detailModal}

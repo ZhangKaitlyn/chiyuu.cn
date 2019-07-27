@@ -72,3 +72,19 @@
   margin-left: 16px;
   vertical-align: bottom;
 }
+
+.combineBox {
+  text-align: center;
+}
+.combine {
+  position: relative;
+  display: inline-block;
+}
+.combineBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+}

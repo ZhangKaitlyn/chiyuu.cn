@@ -2,12 +2,31 @@
   font-size: 40px;
   color: #1d1d1d;
   text-align: center;
-  margin: 30px 0 22px;
   font-weight: normal;
+}
+.marginTopAndBottom {
+  margin: 30px 0 22px;
 }
 .info {
   font-size: 16px;
   color: rgba(29, 29, 29, 0.7);
-  margin-bottom: 64px;
   text-align: center;
+}
+.marginBottom64 {
+  margin-bottom: 64px;
+}
+.combineBox {
+  text-align: center;
+}
+.combine {
+  position: relative;
+  display: inline-block;
+}
+.combineBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
 }
