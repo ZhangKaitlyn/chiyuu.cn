@@ -30,3 +30,30 @@
   right: 0;
   background-color: #000;
 }
+
+.blackBg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+}
+.line {
+  position: fixed;
+  width: 1px;
+  display: inline-block;
+  background-color: #fff;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+}
+.fixedLogo {
+  position: fixed;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -100%);
+}
