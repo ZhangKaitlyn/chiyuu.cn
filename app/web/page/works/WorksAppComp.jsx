@@ -20,14 +20,22 @@ export default class WorksAppComp extends Component {
     return (
       <div>
         <QueueAnim>
-          <div className={worksPageStyle.blackBg}></div>
           <TweenOne
-            delay={2500} className={worksPageStyle.fixedLogo}
+            className={worksPageStyle.leftBlackBg}
             animation={[
-              { duration: 500, opacity: 100, type: 'from', ease: 'easeInOutExpo' },
+              { delay: 2500, duration: 2000, right: '100%', type: 'to', ease: 'easeInOutExpo' }
+            ]}
+          />
+          <TweenOne className={worksPageStyle.rightBlackBg}
+            animation={[
+              { delay: 2500, duration: 2000, left: '100%', type: 'to', ease: 'easeInOutExpo' }
+            ]}
+          />
+          <TweenOne className={worksPageStyle.fixedLogo}
+            animation={[
+              { delay: 500, duration: 500, opacity: 100, type: 'from', ease: 'easeInOutExpo' },
               { duration: 500, opacity: 0, type: 'from', ease: 'easeInOutExpo' },
-              { duration: 1000, opacity: 0.3, top: '30%', type: 'to', ease: 'easeInOutExpo' },
-              { duration: 500, opacity: 0, type: 'to', ease: 'easeInOutExpo' }
+              { duration: 1000, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutExpo' },
             ]}
           >
             <div>Chiyuu.</div>
@@ -38,11 +46,10 @@ export default class WorksAppComp extends Component {
               { duration: 1000, top: '100%', type: 'from', ease: 'easeInOutExpo' },
               { duration: 1000, top: '50%', type: 'to', ease: 'easeInOutExpo' },
               { duration: 1000, top: '0', type: 'to', ease: 'easeInOutExpo' },
-              { duration: 1000, top: '0', bottom:'100%', type: 'to', ease: 'easeInOutExpo' }
             ]}
           />
         </QueueAnim>
-        <QueueAnim delay={2000}>
+        <QueueAnim delay={4000}>
           <Header key='WorksAppComp1' />
           <div className={`${worksPageStyle.marginTopAndBottom} ${worksPageStyle.combineBox}`} key='WorksAppComp2'>
             <div className={worksPageStyle.combine}>
