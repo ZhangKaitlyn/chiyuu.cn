@@ -1,5 +1,4 @@
-// import PersonImg from '../asset/images/person.png'
-const PersonImg = require('../asset/images/person.png')
+const PersonImg = require('../asset/images/no_eye.svg')
 var canvas,
   ctx,
   width,
@@ -13,7 +12,7 @@ var canvas,
   PI,
   TAU
 
-function Eye(opt) {
+const Eye = function(opt) {
   this.x = opt.x
   this.y = opt.y
   this.radius = opt.radius
@@ -36,14 +35,14 @@ Eye.prototype.step = function() {
     this.magnitude = Math.min(Math.abs(dist), this.magnitudeMax)
   }
   this.pupilX +=
-    (this.x + Math.cos(this.angle) * this.magnitude - this.pupilX) * 0.1
+    (this.x + Math.cos(this.angle) * this.magnitude - this.pupilX) * 0.05
   this.pupilY +=
-    (this.y + Math.sin(this.angle) * this.magnitude - this.pupilY) * 0.1
+    (this.y + Math.sin(this.angle) * this.magnitude - this.pupilY) * 0.05
 }
 
 Eye.prototype.draw = function() {
   ctx.beginPath()
-  // ctx.arc(this.x, this.y, this.radius, 0, TAU);
+  ctx.arc(this.x, this.y, this.radius, 0, TAU)
   ctx.fillStyle = 'yellow'
   ctx.fill()
   ctx.lineWidth = 1
@@ -52,7 +51,7 @@ Eye.prototype.draw = function() {
 
   ctx.beginPath()
   ctx.arc(this.pupilX, this.pupilY, this.pupilRadius, 0, TAU)
-  ctx.fillStyle = 'red'
+  ctx.fillStyle = '#000'
   ctx.fill()
 }
 
@@ -70,29 +69,26 @@ const init = function() {
 }
 
 const reset = function() {
-  width = innerWidth
   width = 70
-  console.log('innerWidth', innerWidth)
-  height = innerHeight
   height = 100
   canvas.width = width
   canvas.height = height
   mx = width / 2
-  my = height / 2
+  my = 50
   mouseIdle = true
   eyes.length = 0
   eyes.push(
     new Eye({
       x: width * 0.36,
       y: height * 0.42,
-      radius: 6.5
+      radius: 6.3
     })
   )
   eyes.push(
     new Eye({
       x: width * 0.65,
       y: height * 0.42,
-      radius: 6.5
+      radius: 6.3
     })
   )
 }
@@ -121,19 +117,12 @@ const draw = function() {
   ctx.clearRect(0, 0, width, height)
   let img = new Image()
   img.src = PersonImg
-  img.onload = function() {
-    console.log(img)
-    ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height)
-  }
+  ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height)
 
   var i = eyes.length
   while (i--) {
     eyes[i].draw()
   }
-  // ctx.beginPath();
-  // ctx.arc(width / 2, height * 0.65, 100, 0, PI);
-  // ctx.fillStyle = 'red';
-  // ctx.fill();
 }
 
 const loop = function() {
