@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { Row, Col } from 'antd';
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import aboutPageStyle from "@/asset/css/module/aboutPage.css"
-import aboutPic from 'asset/images/about_pic.png'
+import aboutPageStyle from '@/asset/css/module/aboutPage.css'
+import aboutPic from 'asset/images/walk.gif'
 
 export default class About extends Component {
   render() {
