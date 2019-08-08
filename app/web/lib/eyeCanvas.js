@@ -74,14 +74,14 @@ const reset = function() {
   eyes.push(
     new Eye({
       x: width * 0.36,
-      y: height * 0.42,
+      y: height * 0.4,
       radius: 6.3
     })
   )
   eyes.push(
     new Eye({
       x: width * 0.65,
-      y: height * 0.42,
+      y: height * 0.4,
       radius: 6.3
     })
   )
