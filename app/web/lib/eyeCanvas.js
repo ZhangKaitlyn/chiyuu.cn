@@ -1,7 +1,9 @@
 const PersonImg = require('../asset/images/no_eye.svg')
+const SimilePersonImg = require('../asset/images/smile.svg')
 var canvas,
+  canvasRect,
+  isSmile,
   ctx,
-  winWidth,
   width,
   height,
   mx,
@@ -26,8 +28,8 @@ const Eye = function(opt) {
 }
 
 Eye.prototype.step = function() {
-  var dx = mx - (winWidth / 2 + this.x),
-    dy = my - this.y,
+  var dx = mx - (canvasRect.x + this.x),
+    dy = my - (canvasRect.y + this.y),
     dist = Math.sqrt(dx * dx + dy * dy)
   this.angle = Math.atan2(dy, dx)
   if (mouseIdle) {
@@ -57,12 +59,12 @@ const init = function() {
   PI = Math.PI
   TAU = PI * 2
   eyes = []
+  isSmile = false
   reset()
   loop()
 }
 
 const reset = function() {
-  winWidth = window.innerWidth
   width = 70
   height = 100
   canvas.width = width
@@ -70,6 +72,7 @@ const reset = function() {
   mx = width / 2
   my = 50
   mouseIdle = true
+  canvasRect = canvas.getBoundingClientRect()
   eyes.length = 0
   eyes.push(
     new Eye({
@@ -91,6 +94,9 @@ const mousemove = function(e) {
   mx = e.pageX
   my = e.pageY
   mouseIdleTick = mouseIdleMax
+  let { x, y, width: canvasRectWidth, height: canvasRectHeight } = canvasRect
+  isSmile =
+    mx > x && mx < x + canvasRectWidth && my > y && my < y + canvasRectHeight
 }
 
 const step = function() {
@@ -110,9 +116,14 @@ const step = function() {
 const draw = function() {
   ctx.clearRect(0, 0, width, height)
   let img = new Image()
-  img.src = PersonImg
+  if (isSmile) {
+    img.src = SimilePersonImg
+  } else {
+    img.src = PersonImg
+  }
   ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height)
 
+  if (isSmile) return
   var i = eyes.length
   while (i--) {
     eyes[i].draw()

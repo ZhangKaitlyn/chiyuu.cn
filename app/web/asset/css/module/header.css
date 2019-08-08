@@ -20,7 +20,6 @@
   text-align: right;
 }
 
-/* .canvas{
-  width: 70px;
-  height: 100px;
-} */
+.canvas{
+  vertical-align: middle;
+}
