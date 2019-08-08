@@ -5,9 +5,5 @@ module.exports = app => {
       const { ctx } = this
       await ctx.render('home/home.js')
     }
-    async header(){
-      const { ctx } = this
-      await ctx.render('header/header.js')
-    }
   }
 }
