@@ -1,6 +1,7 @@
 const PersonImg = require('../asset/images/no_eye.svg')
 var canvas,
   ctx,
+  winWidth,
   width,
   height,
   mx,
@@ -25,7 +26,7 @@ const Eye = function(opt) {
 }
 
 Eye.prototype.step = function() {
-  var dx = mx - this.x,
+  var dx = mx - (winWidth / 2 + this.x),
     dy = my - this.y,
     dist = Math.sqrt(dx * dx + dy * dy)
   this.angle = Math.atan2(dy, dx)
@@ -41,14 +42,6 @@ Eye.prototype.step = function() {
 }
 
 Eye.prototype.draw = function() {
-  ctx.beginPath()
-  ctx.arc(this.x, this.y, this.radius, 0, TAU)
-  ctx.fillStyle = 'yellow'
-  ctx.fill()
-  ctx.lineWidth = 1
-  ctx.strokeStyle = 'blue'
-  ctx.stroke()
-
   ctx.beginPath()
   ctx.arc(this.pupilX, this.pupilY, this.pupilRadius, 0, TAU)
   ctx.fillStyle = '#000'
@@ -69,6 +62,7 @@ const init = function() {
 }
 
 const reset = function() {
+  winWidth = window.innerWidth
   width = 70
   height = 100
   canvas.width = width
