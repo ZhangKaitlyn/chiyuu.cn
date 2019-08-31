@@ -38,6 +38,7 @@
   top: 0;
   bottom: 0;
   background-color: #000;
+  z-index: 1;
 }
 .rightBlackBg {
   position: fixed;
@@ -46,6 +47,7 @@
   top: 0;
   bottom: 0;
   background-color: #000;
+  z-index: 1;
 }
 .line1 {
   position: fixed;
@@ -55,6 +57,7 @@
   top: 54%;
   bottom: 0;
   left: 50%;
+  z-index: 2;
 }
 .line2 {
   position: fixed;
@@ -64,6 +67,7 @@
   top: 0;
   bottom: 0;
   left: 50%;
+  z-index: 2;
 }
 .fixedLogo {
   position: fixed;
@@ -73,4 +77,5 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -100%);
+  z-index: 2;
 }
