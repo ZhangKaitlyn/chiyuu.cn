@@ -20,6 +20,12 @@
   text-align: right;
 }
 
-.canvas{
+.canvas {
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1440) {
+  .headerRow {
+    padding: 0 32px;
+  }
 }

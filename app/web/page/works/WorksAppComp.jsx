@@ -23,33 +23,38 @@ export default class WorksAppComp extends Component {
           <TweenOne
             className={worksPageStyle.leftBlackBg}
             animation={[
-              { delay: 2500, duration: 2000, right: '100%', type: 'to', ease: 'easeInOutExpo' }
+              { delay: 1100, duration: 800, right: '100%', type: 'to', ease: 'easeOutQuad' }
             ]}
           />
           <TweenOne className={worksPageStyle.rightBlackBg}
             animation={[
-              { delay: 2500, duration: 2000, left: '100%', type: 'to', ease: 'easeInOutExpo' }
+              { delay: 1100, duration: 800, left: '100%', type: 'to', ease: 'easeOutQuad' }
             ]}
           />
           <TweenOne className={worksPageStyle.fixedLogo}
             animation={[
-              { delay: 500, duration: 500, opacity: 100, type: 'from', ease: 'easeInOutExpo' },
-              { duration: 500, opacity: 0, type: 'from', ease: 'easeInOutExpo' },
-              { duration: 1000, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutExpo' },
+              { delay: 200, duration: 150, opacity: 100, type: 'from' },
+              { duration: 150, opacity: 0, type: 'from', ease: 'easeInOutSine' },
+              { duration: 200, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutSine' },
             ]}
           >
             <div>Chiyuu.</div>
           </TweenOne>
           <TweenOne
-            className={worksPageStyle.line}
+            className={worksPageStyle.line1}
             animation={[
-              { duration: 1000, top: '100%', type: 'from', ease: 'easeInOutExpo' },
-              { duration: 1000, top: '50%', type: 'to', ease: 'easeInOutExpo' },
-              { duration: 1000, top: '0', type: 'to', ease: 'easeInOutExpo' },
+              { delay:200,duration: 300, top: '100%', type: 'from', ease: 'easeInOutSine' },
+              { duration: 150, opacity: 0, type: 'to' }
+            ]}
+          />
+          <TweenOne
+            className={worksPageStyle.line2}
+            animation={[
+              { delay:500, duration: 800, top: '100%', type: 'from', ease: 'easeOutQuad' }
             ]}
           />
         </QueueAnim>
-        <QueueAnim delay={4000}>
+        <QueueAnim delay={1100}>
           <Header key='WorksAppComp1' />
           <div className={`${worksPageStyle.marginTopAndBottom} ${worksPageStyle.combineBox}`} key='WorksAppComp2'>
             <div className={worksPageStyle.combine}>

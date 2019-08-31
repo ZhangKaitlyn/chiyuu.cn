@@ -47,12 +47,21 @@
   bottom: 0;
   background-color: #000;
 }
-.line {
+.line1 {
+  position: fixed;
+  width: 1px;
+  display: inline-block;
+  background-color: rgba(133, 133, 133, 0.5);
+  top: 54%;
+  bottom: 0;
+  left: 50%;
+}
+.line2 {
   position: fixed;
   width: 1px;
   display: inline-block;
   background-color: #fff;
-  top: 50%;
+  top: 0;
   bottom: 0;
   left: 50%;
 }
