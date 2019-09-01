@@ -131,14 +131,13 @@ export default class WorksList extends Component {
             <TweenOne
               className={worksListStyle.combineBar}
               animation={[
-                { delay: 1300, duration: 800, width: 0, x: 0, type: 'from', ease: 'easeOutSine' },
-                { duration: 1000, width: 0, x: 675, type: 'to', ease: 'easeInOutExpo' }
+                { delay: 1300, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
+                { duration: 1000, left: '100%', right: 0, type: 'to', ease: 'easeInOutExpo' }
               ]}
             />
           </div>
         </div>
         <Row className={worksListStyle.worksBoxList} gutter={16}>
-          {/* <QueueAnim duration={1000} interval={500} delay={1000}>{worksListDom}</QueueAnim> */}
           {worksListDom}
         </Row>
         <Modal

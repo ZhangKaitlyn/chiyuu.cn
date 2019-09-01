@@ -65,8 +65,8 @@ export default class WorksAppComp extends Component {
             <TweenOne
               className={worksPageStyle.combineBar}
               animation={[
-                { delay: 1300, duration: 800, width: 0, x: 0, type: 'from', ease: 'easeOutSine' },
-                { duration: 1000, width: 0, x: 480, type: 'to', ease: 'easeInOutExpo' }
+                { delay: 1300, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
+                { duration: 1000, left: '100%', right: 0, type: 'to', ease: 'easeInOutExpo' }
               ]}
             />
           </div>
@@ -83,8 +83,8 @@ export default class WorksAppComp extends Component {
             <TweenOne
               className={worksPageStyle.combineBar}
               animation={[
-                { delay: 1300, duration: 800, width: 0, x: 0, type: 'from', ease: 'easeOutSine' },
-                { duration: 1000, width: 0, x: 155, type: 'to', ease: 'easeInOutExpo' }
+                { delay: 1300, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
+                { duration: 1000, left: '100%', right: 0, type: 'to', ease: 'easeInOutExpo' }
               ]}
             />
           </div>
