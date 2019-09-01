@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Row, Col, Modal } from 'antd';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
+import Texty from 'rc-texty';
 import worksListStyle from 'asset/css/module/worksList.css'
 import WorksCoverImg from 'asset/images/work_1.png'
 import GIFImg from 'asset/images/GIF.png'
@@ -96,16 +97,20 @@ export default class WorksList extends Component {
 
       }
     }
-    const worksListDom = this.props.works.map((workDetail) => {
+    const worksListDom = this.props.works.map((workDetail, index) => {
       let { type, title, info, id } = workDetail
       return (
         <Col className={worksListStyle.worksItem} span={6} key={id} onClick={this.showWorkDetail.bind(this, workDetail)}>
-          <div className={worksListStyle.worksCover}>
-            <img className={worksListStyle.coverImg} src={WorksCoverImg} alt="" />
-            <WorkCover type={type}></WorkCover>
-          </div>
-          <div className={worksListStyle.worksTitle}>{title}---{type}</div>
-          <div className={worksListStyle.worksInfo}>{info}</div>
+          <TweenOne className={worksListStyle.worksItemAnim} animation={[
+            { delay: 1500 + (index - 1) * 300, duration: 800, top: 40, opacity: 0, type: 'from', ease: 'easeOutSine' }
+          ]}>
+            <div className={worksListStyle.worksCover}>
+              <img className={worksListStyle.coverImg} src={WorksCoverImg} alt="" />
+              <WorkCover type={type}></WorkCover>
+            </div>
+            <div className={worksListStyle.worksTitle}>{title}---{type}</div>
+            <div className={worksListStyle.worksInfo}>{info}</div>
+          </TweenOne>
         </Col>
       )
     })
@@ -113,20 +118,28 @@ export default class WorksList extends Component {
       <div className={worksListStyle.worksList}>
         <div className={worksListStyle.combineBox} key='WorksAppComp3'>
           <div className={worksListStyle.combine}>
-            <ul className={worksListStyle.classifiesList}>
-              {classifiesList}
-              <li>|</li>
-              <li>新作</li>
-              <li>旧品</li>
-            </ul>
+            <TweenOne
+              animation={[{ delay: 1400, duration: 800, opacity: 0, type: 'from', ease: 'easeOutSine' }]}
+            >
+              <ul className={worksListStyle.classifiesList}>
+                {classifiesList}
+                <li>|</li>
+                <li>新作</li>
+                <li>旧品</li>
+              </ul>
+            </TweenOne>
             <TweenOne
               className={worksListStyle.combineBar}
-              animation={[{ duration: 500, width: 0, x: 0, type: 'from', ease: 'easeInOutExpo' }, { duration: 500, width: 0, x: 675, type: 'to', ease: 'easeInOutExpo' }]}
+              animation={[
+                { delay: 1300, duration: 800, width: 0, x: 0, type: 'from', ease: 'easeOutSine' },
+                { duration: 1000, width: 0, x: 675, type: 'to', ease: 'easeInOutExpo' }
+              ]}
             />
           </div>
         </div>
         <Row className={worksListStyle.worksBoxList} gutter={16}>
-          <QueueAnim duration={1000} interval={500} delay={1000}>{worksListDom}</QueueAnim>
+          {/* <QueueAnim duration={1000} interval={500} delay={1000}>{worksListDom}</QueueAnim> */}
+          {worksListDom}
         </Row>
         <Modal
           width={864}

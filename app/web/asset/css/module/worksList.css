@@ -25,6 +25,9 @@
   margin-bottom: 32px;
   cursor: pointer;
 }
+.worksItemAnim {
+  position: relative;
+}
 .worksCover {
   position: relative;
 }
