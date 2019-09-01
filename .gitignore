@@ -3,3 +3,5 @@ run
 logs
 config/manifest.json
 logs
+public
+view
