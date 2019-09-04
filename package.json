@@ -5,7 +5,8 @@
   "scripts": {
     "build": "easy build",
     "dev": "egg-bin dev",
-    "start": "egg-scripts start --port=80",
+    "start": "egg-scripts start --port=80 --daemon --title=asd",
+    "stop": "egg-scripts stop --title=asd",
     "debug": "egg-bin debug",
     "clean": "easy clean",
     "kill-port": "kill -9 $(lsof -i:8888 |grep 'node'|aw '{print $2}') ",
