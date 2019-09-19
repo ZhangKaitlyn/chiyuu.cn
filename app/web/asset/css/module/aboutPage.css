@@ -3,7 +3,8 @@
 }
 .content {
   margin-bottom: 32px;
-  max-width: 1440px;
+  max-width: 1600px;
+  padding: 0 80px;
   margin: 0 auto;
 }
 .imgZone {
