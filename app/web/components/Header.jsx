@@ -8,6 +8,8 @@ import { init } from '../lib/eyeCanvas'
 export default class Header extends Component {
   constructor(props) {
     super(props)
+    this.showDrawer = this.showDrawer.bind(this);
+    this.onClose = this.onClose.bind(this);
     this.state = { visible: false }
   }
   componentDidMount() {
@@ -25,33 +27,49 @@ export default class Header extends Component {
   }
 
   render() {
+    const getButtonDom = function (visible) {
+      if (visible) {
+        return <Button icon="close" onClick={this.onClose}></Button>
+      }
+      else {
+        return <Button icon="menu" onClick={this.showDrawer}></Button>
+      }
+    }
+    const buttonDom = this.state.visible ? (<Button icon="close" onClick={this.onClose}></Button>) : (<Button icon="close" onClick={this.onClose}></Button>)
     return (
       <div>
         <Row className={headerStyles.headerRow}>
-          <Col span={8}>
-            <img src={LogoImg} alt="Chiyuu" />
+          <Col xs={8} sm={8}>
+            <img className={headerStyles.logo} src={LogoImg} alt="Chiyuu" />
           </Col>
-          <Col span={8} className={headerStyles.personImgCol}>
+          <Col xs={8} sm={8} className={headerStyles.personImgCol}>
             <canvas className={headerStyles.canvas}></canvas>
           </Col>
-          <Col sm={0} md={8} className={headerStyles.linksCol}>
+          <Col xs={0} sm={0} md={8} className={headerStyles.linksCol}>
             <a href='/works'>作品</a>
             <a href='/about'>关于</a>
           </Col>
-          <Col sm={8} md={0}>
-            <Button icon="menu" onClick={this.showDrawer}></Button>
+          <Col xs={8} sm={8} md={0} className={headerStyles.drawerCol}>
+            {
+              this.state.visible ? (<Button icon="close" onClick={this.onClose}></Button>) : (<Button icon="menu" onClick={this.showDrawer}></Button>)
+            }
           </Col>
         </Row>
         <Drawer
           title="Basic Drawer"
           placement="top"
-          closable={true}
-          onClose={this.onClose}
+          style={{ top: this.state.visible ? "100px" : 0 }}
+          height="100vh"
+          closable={false}
+          mask={false}
           visible={this.state.visible}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <div className={headerStyles.drawerMenuItem}>
+            <a href='/works'>作品</a>
+          </div>
+          <div className={headerStyles.drawerMenuItem}>
+            <a href='/about'>关于</a>
+          </div>
         </Drawer>
       </div>
     )

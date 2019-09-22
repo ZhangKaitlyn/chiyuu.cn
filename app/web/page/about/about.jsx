@@ -11,8 +11,8 @@ export default class About extends Component {
       <div className={aboutPageStyle.aboutPage}>
         <Header></Header>
         <Row className={aboutPageStyle.content}>
-          <Col span={12} className={aboutPageStyle.imgZone}><img src={aboutPic} alt="" /></Col>
-          <Col span={12} className={aboutPageStyle.infoZone}>
+          <Col xs={24} sm={24} md={12} className={aboutPageStyle.imgZone}><img src={aboutPic} alt="" /></Col>
+          <Col xs={24} sm={24} md={12} className={aboutPageStyle.infoZone}>
             <h1 className={aboutPageStyle.pageTitle}>蔡小民 Chiyu</h1>
             <div className={aboutPageStyle.item}>
               <div className={aboutPageStyle.itemTitle}>履历</div>
