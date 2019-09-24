@@ -46,3 +46,31 @@
   font-size: 14px;
   color: rgba(29, 29, 29, 0.5);
 }
+
+@media screen and (max-width: 576px) {
+  .content{
+    margin-top: 40px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imgZone {
+    padding: 0;
+  }
+  .infoZone{
+    padding: 0;
+  }
+  .pageTitle{
+    font-size: 22px;
+  }
+  .itemTitle{
+    font-weight: normal;
+  }
+  .infoTitle{
+    flex-direction: column;
+  }
+  .infoTitle > span{
+    font-size: 12px;
+    margin-top: 8px;
+  }
+}
