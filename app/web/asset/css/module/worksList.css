@@ -4,10 +4,27 @@
   margin: 0 auto;
 }
 
+:global(.ant-dropdown-trigger){
+  display: none;
+}
 .classifiesList {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: inline-block;
+}
+.classifiesList + .classifiesList{
+  margin-left: 48px;
+}
+:global(.ant-menu-horizontal > .ant-menu-item){
+  border: none;
+  padding: 0;
+}
+:global(.ant-menu-horizontal > .ant-menu-item):hover{
+  border: none;
+}
+.classifiesList ul{
+  border: none;
 }
 .classifiesList li {
   display: inline-block;
@@ -45,6 +62,9 @@
   font-size: 16px;
   color: #1d1d1d;
   margin-top: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .worksInfo {
   text-align: center;
@@ -91,4 +111,26 @@
   left: 0;
   right: 0;
   background-color: #000;
+}
+
+@media screen and (max-width: 576px) {
+  .worksList{
+    padding: 0 16px;
+  }
+  :global(.ant-dropdown-trigger){
+    display: inline-block;
+    color: #1d1d1d;
+  }
+  .menuHideXs{
+    display: none;
+  }
+  .classifiesList{
+    margin-left: 32px;
+  }
+  .classifiesList li + li {
+    margin-left: 32px;
+  }
+  .worksItem{
+    margin-bottom: 24px;
+  }
 }

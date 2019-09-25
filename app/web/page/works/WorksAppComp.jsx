@@ -12,7 +12,7 @@ export default class WorksAppComp extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: true,
+      show: true
     };
   }
   render() {
@@ -33,7 +33,7 @@ export default class WorksAppComp extends Component {
           animation={[
             { delay: 200, duration: 150, opacity: 100, type: 'from' },
             { duration: 150, opacity: 0, type: 'from', ease: 'easeInOutSine' },
-            { duration: 200, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutSine' },
+            { duration: 200, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutSine' }
           ]}
         >
           <div>Chiyuu.</div>
