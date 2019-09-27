@@ -115,15 +115,15 @@ const step = function() {
 
 const draw = function() {
   ctx.clearRect(0, 0, width, height)
-  let img = new Image()
+  let personImg = new Image()
+  personImg.src = PersonImg
+  let smileImg = new Image()
+  smileImg.src = SimilePersonImg
   if (isSmile) {
-    img.src = SimilePersonImg
+    return ctx.drawImage(smileImg, 0, 0, ctx.canvas.width, ctx.canvas.height)
   } else {
-    img.src = PersonImg
+    ctx.drawImage(personImg, 0, 0, ctx.canvas.width, ctx.canvas.height)
   }
-  ctx.drawImage(img, 0, 0, ctx.canvas.width, ctx.canvas.height)
-
-  if (isSmile) return
   var i = eyes.length
   while (i--) {
     eyes[i].draw()
