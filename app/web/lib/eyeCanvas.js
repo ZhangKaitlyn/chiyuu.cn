@@ -97,6 +97,8 @@ const mousemove = function(e) {
   let { x, y, width: canvasRectWidth, height: canvasRectHeight } = canvasRect
   isSmile =
     mx > x && mx < x + canvasRectWidth && my > y && my < y + canvasRectHeight
+  step()
+  draw()
 }
 
 const step = function() {
