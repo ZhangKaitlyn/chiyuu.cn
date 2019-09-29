@@ -27,5 +27,11 @@ module.exports = app => {
     layout: path.resolve(app.baseDir, 'app/web/view/layout.html')
   };
 
+  exports.security = {
+    csrf: {
+      enable: false
+    }
+  };
+
   return exports;
 };
