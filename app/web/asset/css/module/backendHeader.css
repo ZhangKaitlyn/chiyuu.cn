@@ -1,0 +1,91 @@
+.headerRow {
+  height: 226px;
+  line-height: 226px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+.headerRow a {
+  font-size: 16px;
+  color: #1d1d1d;
+  padding: 0 28px;
+}
+.logo{
+  vertical-align: text-bottom;
+}
+.pageName{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 16px;
+  color: #1d1d1d;
+}
+.personImgCol {
+  text-align: center;
+}
+.personImgCol img {
+  width: 70px;
+  height: auto;
+}
+.linksCol {
+  text-align: right;
+}
+
+.drawerCol {
+  text-align: right;
+}
+
+.drawerCol :global(.ant-btn) {
+  border: none;
+  color: #1f1f1f;
+  font-size: 16px;
+}
+
+.canvas {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1440px) {
+  .headerRow {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .headerRow {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 16px;
+    z-index: 99999;
+  }
+  .logo {
+    width: 72px;
+  }
+  .canvas {
+    width: 50px;
+  }
+  :global(.ant-drawer-header) {
+    display: none;
+  }
+  :global(.ant-drawer-top.ant-drawer-open .ant-drawer-content-wrapper) {
+    box-shadow: none;
+  }
+  :global(.ant-drawer-body) {
+    display: flex;
+    height: 100vh;
+    top: -100px;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .drawerMenuItem {
+    margin-bottom: 118px;
+  }
+  .drawerMenuItem a {
+    font-size: 24px;
+    color: #1d1d1d;
+  }
+  .drawerMenuItem:last-child {
+    margin-bottom: 0;
+  }
+}

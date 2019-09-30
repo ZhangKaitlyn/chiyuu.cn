@@ -6,4 +6,7 @@ module.exports = app => {
   app.get('/detail', app.controller.works.detail);
   app.get('/about', app.controller.about.index);
   app.post('/works', app.controller.backend.works.getWorksList);
+  app.get('/back/login', app.controller.back.login);
+  app.get('/back/list', app.controller.back.list);
+  app.get('/back/upload', app.controller.back.upload);
 };
