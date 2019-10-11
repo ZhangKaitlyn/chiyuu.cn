@@ -4,6 +4,7 @@
     "type": "multiple",
     "title": "Hello Keepwork",
     "info": "Keepwork Project Description",
+    "cover": "https://api.keepwork.com/storage/v0/siteFiles/7767/raw#work_1.png",
     "images": [
       "https://images.unsplash.com/photo-1564074621995-7c1f9a8ea9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80",
       "https://images.unsplash.com/photo-1564084571423-7894bb30fe80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
