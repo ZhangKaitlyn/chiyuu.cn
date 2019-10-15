@@ -49,17 +49,27 @@ export default class List extends Component {
             <img className={listStyle.coverImg} src={cover} alt="" />
             <WorkCover type={type}></WorkCover>
           </div>
-          <div className={listStyle.worksTitle} title={title}>
-            {title}
+          <div className={listStyle.worksMain}>
+            <div className={listStyle.detail}>
+              <div className={listStyle.worksTitle} title={title}>
+                {title}
+              </div>
+              <div className={listStyle.worksInfo}>{info}</div>
+            </div>
+            <div className={listStyle.operate}>
+              <div className={listStyle.editBtn}>编辑</div>
+              <div className={listStyle.deleteBtn}>删除</div>
+            </div>
           </div>
-          <div className={listStyle.worksInfo}>{info}</div>
         </Col>
       )
     })
     return (
       <div>
         <Header pageName="作品管理" />
-        <Row className={listStyle.listBox} gutter={16}>{worksList}</Row>
+        <Row className={listStyle.listBox} gutter={16}>
+          {worksList}
+        </Row>
         <Footer />
       </div>
     )

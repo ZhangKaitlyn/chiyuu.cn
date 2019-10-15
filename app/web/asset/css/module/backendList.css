@@ -1,11 +1,10 @@
 .listBox{
   max-width: 1440px;
   padding: 0 80px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 .worksItem {
   margin-bottom: 32px;
-  cursor: pointer;
 }
 .worksCover {
   position: relative;
@@ -19,7 +18,7 @@
   top: 8px;
 }
 .worksTitle {
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   color: #1d1d1d;
   margin-top: 12px;
@@ -28,7 +27,33 @@
   text-overflow: ellipsis;
 }
 .worksInfo {
-  text-align: center;
+  text-align: left;
   font-size: 12px;
   color: rgba(29, 29, 29, 0.5);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.worksMain{
+  display: flex;
+  align-items: center;
+}
+.detail{
+  flex: 1;
+  overflow: hidden;
+}
+.operate{
+  flex-shrink: 0;
+}
+.editBtn{
+  display: inline-block;
+  color: #1761ff;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.deleteBtn{
+  display: inline-block;
+  color: #f71818;
+  cursor: pointer;
 }
