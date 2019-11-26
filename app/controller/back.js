@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs')
 const sendToWormhole = require('stream-wormhole')
 const awaitWriteStream = require('await-stream-ready').write
-const _filepath = 'app/datas/images'
+const _filepath = 'datas/images'
 module.exports = app => {
   return class AppController extends app.Controller {
     async login() {
@@ -30,7 +30,16 @@ module.exports = app => {
         throw err
       }
       ctx.body = {
-        url: '/' + _filepath + '/' + filename
+        filename: filename
+      }
+    }
+    async image() {
+      const { ctx } = this
+      let { filename } = ctx.query
+      console.log(ctx.query)
+      console.log(filename)
+      ctx.body = {
+        message: filename
       }
     }
   }

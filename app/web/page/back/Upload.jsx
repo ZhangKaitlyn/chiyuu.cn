@@ -12,6 +12,7 @@ import {
 import Header from '@/components/backend/Header'
 import Footer from '@/components/backend/Footer'
 import uploadCss from 'asset/css/module/backendUpload.css'
+const IMG_URL = 'http://192.168.137.1:3000/images/'
 
 class UploadComp extends Component {
   constructor(props) {
@@ -42,9 +43,8 @@ class UploadComp extends Component {
       return
     }
     if (info.file.status === 'done') {
-      console.log(info.file.response.url)
       this.setState({
-        imageUrl: info.file.response.url,
+        imageUrl: IMG_URL + info.file.response.filename,
         loading: false
       })
     }

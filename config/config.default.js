@@ -1,37 +1,37 @@
-const path = require('path');
-const fs = require('fs');
+const path = require('path')
+const fs = require('fs')
 module.exports = app => {
-  const exports = {};
+  const exports = {}
 
   exports.siteFile = {
-    '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))
-  };
+    '/favicon.ico': fs.readFileSync(
+      path.join(app.baseDir, 'app/web/asset/images/favicon.ico')
+    )
+  }
 
   exports.logger = {
     consoleLevel: 'DEBUG',
     dir: path.join(app.baseDir, 'logs')
-  };
+  }
 
   exports.static = {
-    prefix: '/public/',
-    dir: path.join(app.baseDir, 'public')
-  };
+    prefix: '/',
+    dir: [path.join(app.baseDir, 'public'), path.join(app.baseDir, 'datas')]
+  }
 
-  exports.keys = '123456';
+  exports.keys = '123456'
 
-  exports.middleware = [
-    'access'
-  ];
+  exports.middleware = ['access']
 
   exports.reactssr = {
     layout: path.resolve(app.baseDir, 'app/web/view/layout.html')
-  };
+  }
 
   exports.security = {
     csrf: {
       enable: false
     }
-  };
+  }
 
-  return exports;
-};
+  return exports
+}
