@@ -19,15 +19,19 @@ class UploadComp extends Component {
     super(props)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.handleMultipleChange = this.handleMultipleChange.bind(this)
     this.state = {
-      imageUrl: '',
-      loading: false
+      coverUrl: '',
+      worksUrl: [],
+      loading: false,
+      multipleLoading: false
     }
   }
   handleSubmit(e) {
     e.preventDefault()
     this.props.form.validateFieldsAndScroll((err, values) => {
       if (!err) {
+        console.log(this.state.worksUrl)
         console.log('Received values of form: ', values)
       }
     })
@@ -44,8 +48,23 @@ class UploadComp extends Component {
     }
     if (info.file.status === 'done') {
       this.setState({
-        imageUrl: IMG_URL + info.file.response.filename,
+        coverUrl: IMG_URL + info.file.response.filename,
         loading: false
+      })
+    }
+  }
+  handleMultipleChange(info) {
+    if (info.file.status === 'uploading') {
+      this.setState({ multipleLoading: true })
+      return
+    }
+    if (info.file.status === 'done') {
+      console.log(this.state.worksUrl)
+      this.setState({
+        worksUrl: this.state.worksUrl.push(
+          IMG_URL + info.file.response.filename
+        ),
+        multipleLoading: false
       })
     }
   }
@@ -110,6 +129,12 @@ class UploadComp extends Component {
       </div>
     )
 
+    const multipleuploadButton = (
+      <div>
+        <Icon type={this.state.multipleLoading ? 'loading' : 'plus'} />
+        <div className="ant-upload-text">Upload</div>
+      </div>
+    )
     return (
       <div>
         <Header pageName="上传作品" />
@@ -190,15 +215,38 @@ class UploadComp extends Component {
                   action="/back/uploadImage"
                   onChange={this.handleChange}
                 >
-                  {this.state.imageUrl ? (
+                  {this.state.coverUrl ? (
                     <img
-                      src={this.state.imageUrl}
+                      src={this.state.coverUrl}
                       alt="avatar"
                       style={{ width: '100%' }}
                     />
                   ) : (
                     uploadButton
                   )}
+                </Upload>
+              )}
+            </Form.Item>
+            <Form.Item label="作品">
+              {getFieldDecorator('images', {
+                rules: [
+                  {
+                    required: true,
+                    message: '请上传作品图片'
+                  }
+                ]
+              })(
+                <Upload
+                  accept="image/*"
+                  name="avatar"
+                  listType="picture-card"
+                  className="avatar-uploader"
+                  showUploadList={{ showRemoveIcon: true }}
+                  multiple={true}
+                  action="/back/uploadImage"
+                  onChange={this.handleMultipleChange}
+                >
+                  {multipleuploadButton}
                 </Upload>
               )}
             </Form.Item>
