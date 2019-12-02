@@ -10,5 +10,6 @@ module.exports = app => {
   app.get('/back/login', app.controller.back.login)
   app.get('/back/list', app.controller.back.list)
   app.get('/back/upload', app.controller.back.upload),
-  app.post('/back/uploadImage', app.controller.back.uploadImage)
+  app.post('/back/uploadImage', app.controller.back.uploadImage),
+  app.post('/back/work/new', app.controller.back.newWork)
 }

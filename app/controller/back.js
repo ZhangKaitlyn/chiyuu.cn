@@ -3,6 +3,7 @@ const fs = require('fs')
 const sendToWormhole = require('stream-wormhole')
 const awaitWriteStream = require('await-stream-ready').write
 const _filepath = 'datas/images'
+const worksJsonPath = './app/datas/works.json'
 module.exports = app => {
   return class AppController extends app.Controller {
     async login() {
@@ -41,6 +42,34 @@ module.exports = app => {
       ctx.body = {
         message: filename
       }
+    }
+    async newWork() {
+      const { ctx } = this
+      const params = ctx.request.body
+      fs.readFile(worksJsonPath, (err, data) => {
+        if (err) {
+          console.log(err)
+          ctx.body = {
+            message: 'read json file error:' + err
+          }
+          return
+        }
+        let worksList = JSON.parse(data.toString())
+        worksList.push(params)
+        fs.writeFile(worksJsonPath, JSON.stringify(worksList), err => {
+          if (err) {
+            console.log(err)
+            ctx.body = {
+              message: 'write json file error:' + err
+            }
+            return
+          }
+          ctx.body = {
+            message: 'success'
+          }
+          return
+        })
+      })
     }
   }
 }

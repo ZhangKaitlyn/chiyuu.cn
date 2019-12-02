@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {
+  message,
   Form,
   Input,
   Button,
@@ -12,6 +13,7 @@ import {
 import Header from '@/components/backend/Header'
 import Footer from '@/components/backend/Footer'
 import uploadCss from 'asset/css/module/backendUpload.css'
+import axios from 'axios'
 const IMG_URL = 'http://192.168.137.1:3000/images/'
 
 class UploadComp extends Component {
@@ -29,10 +31,21 @@ class UploadComp extends Component {
   }
   handleSubmit(e) {
     e.preventDefault()
-    this.props.form.validateFieldsAndScroll((err, values) => {
+    this.props.form.validateFieldsAndScroll(async (err, values) => {
+      console.log(this.state.worksUrl)
+      console.log(this.state.coverUrl)
       if (!err) {
-        console.log(this.state.worksUrl)
         console.log('Received values of form: ', values)
+        try {
+          await axios.post('/back/work/new', {
+            ...values,
+            cover: this.state.coverUrl,
+            images: this.state.worksUrl
+          })
+          message.success('上传成功')
+        } catch (error) {
+          console.log(error)
+        }
       }
     })
   }
@@ -59,11 +72,11 @@ class UploadComp extends Component {
       return
     }
     if (info.file.status === 'done') {
-      console.log(this.state.worksUrl)
+      let worksUrl = this.state.worksUrl
+      let newUrl = IMG_URL + info.file.response.filename
+      worksUrl.push(newUrl)
       this.setState({
-        worksUrl: this.state.worksUrl.push(
-          IMG_URL + info.file.response.filename
-        ),
+        worksUrl,
         multipleLoading: false
       })
     }
