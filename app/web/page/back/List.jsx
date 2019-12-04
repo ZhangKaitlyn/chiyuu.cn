@@ -30,12 +30,11 @@ export default class List extends Component {
     function WorkCover(props) {
       let { type, classProp } = props
       let resultClassName = classProp || listStyle.worksType
-      console.log(classProp, '---', resultClassName)
-      if (type == 'gif') {
+      if (type == 2) {
         return <img className={resultClassName} src={GIFImg} alt="" />
-      } else if (type == 'multiple') {
+      } else if (type == 3) {
         return <img className={resultClassName} src={MultipleImg} alt="" />
-      } else if (type == 'video') {
+      } else if (type == 4) {
         return <img className={resultClassName} src={VideoImg} alt="" />
       } else {
         return <span></span>
