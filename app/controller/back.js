@@ -46,30 +46,43 @@ module.exports = app => {
     async newWork() {
       const { ctx } = this
       const params = ctx.request.body
-      fs.readFile(worksJsonPath, (err, data) => {
-        if (err) {
-          console.log(err)
-          ctx.body = {
-            message: 'read json file error:' + err
-          }
-          return
-        }
+      try {
+        let data = fs.readFileSync(worksJsonPath)
         let worksList = JSON.parse(data.toString())
         worksList.push(params)
-        fs.writeFile(worksJsonPath, JSON.stringify(worksList), err => {
-          if (err) {
-            console.log(err)
-            ctx.body = {
-              message: 'write json file error:' + err
-            }
-            return
-          }
-          ctx.body = {
-            message: 'success'
-          }
-          return
-        })
-      })
+        fs.writeFileSync(worksJsonPath, JSON.stringify(worksList))
+        ctx.body = {
+          message: 'success'
+        }
+      } catch (error) {
+        ctx.body = {
+          message: 'read or write json file error:' + err
+        }
+      }
+      //   fs.readFile(worksJsonPath, (err, data) => {
+      //     if (err) {
+      //       console.log(err)
+      //       ctx.body = {
+      //         message: 'read json file error:' + err
+      //       }
+      //       return
+      //     }
+      //     let worksList = JSON.parse(data.toString())
+      //     worksList.push(params)
+      //     fs.writeFile(worksJsonPath, JSON.stringify(worksList), err => {
+      //       if (err) {
+      //         console.log(err)
+      //         ctx.body = {
+      //           message: 'write json file error:' + err
+      //         }
+      //         return
+      //       }
+      //       ctx.body = {
+      //         message: 'success'
+      //       }
+      //       return
+      //     })
+      //   })
     }
   }
 }

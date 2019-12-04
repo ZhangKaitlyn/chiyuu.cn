@@ -32,8 +32,6 @@ class UploadComp extends Component {
   handleSubmit(e) {
     e.preventDefault()
     this.props.form.validateFieldsAndScroll(async (err, values) => {
-      console.log(this.state.worksUrl)
-      console.log(this.state.coverUrl)
       if (!err) {
         console.log('Received values of form: ', values)
         try {
@@ -43,6 +41,7 @@ class UploadComp extends Component {
             images: this.state.worksUrl
           })
           message.success('上传成功')
+          window.location.href = '/back/list'
         } catch (error) {
           console.log(error)
         }
