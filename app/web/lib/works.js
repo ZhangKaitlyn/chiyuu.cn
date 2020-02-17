@@ -16,7 +16,7 @@ export const works = [
     type: 'multiple',
     title: '一罐APP「重设计」',
     info: 'app - redesign',
-    coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/2.%E4%B8%80%E7%BD%90app.png',
+    coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/2.%E4%B8%80%E7%BD%90app%28%E6%96%B0%29.png',
     images: [
       'https://images.unsplash.com/photo-1564074621995-7c1f9a8ea9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80',
       'https://images.unsplash.com/photo-1564084571423-7894bb30fe80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
