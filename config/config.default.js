@@ -15,8 +15,8 @@ module.exports = app => {
   }
 
   exports.static = {
-    prefix: '/',
-    dir: [path.join(app.baseDir, 'public'), path.join(app.baseDir, 'datas')]
+    prefix: '/public/',
+    dir: path.join(app.baseDir, 'public')
   }
 
   exports.keys = '123456'
