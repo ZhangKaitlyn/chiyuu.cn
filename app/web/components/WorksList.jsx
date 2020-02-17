@@ -101,7 +101,7 @@ export default class WorksList extends Component {
       }
     }
     const worksListDom = this.props.works.map((workDetail, index) => {
-      let { type, title, info, id } = workDetail
+      let { type, title, info, id, coverImg } = workDetail
       return (
         <Col
           className={worksListStyle.worksItem}
@@ -126,7 +126,7 @@ export default class WorksList extends Component {
             <div className={worksListStyle.worksCover}>
               <img
                 className={worksListStyle.coverImg}
-                src={WorksCoverImg}
+                src={coverImg}
                 alt=""
               />
               <WorkCover type={type}></WorkCover>
@@ -220,7 +220,7 @@ export default class WorksList extends Component {
           destroyOnClose={true}
         >
           <div className="info">{this.state.activeWork.info}</div>
-          <img className="preview" src={WorksCoverImg} alt="" />
+          <img className="preview" src={this.state.activeWork.coverImg} alt="" />
         </Modal>
       </div>
     )
