@@ -2,6 +2,7 @@ export const works = [
   {
     id: 1,
     type: 'multiple',
+    labelType: 'top',
     title: '作品集&简历[快速通道]',
     info: '其他-作品集',
     coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/1.%E4%BD%9C%E5%93%81%E9%9B%86&%E7%AE%80%E5%8E%86.png',
@@ -14,6 +15,7 @@ export const works = [
   {
     id: 2,
     type: 'multiple',
+    labelType: 'new',
     title: '一罐APP「重设计」',
     info: 'app - redesign',
     coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/2.%E4%B8%80%E7%BD%90app%28%E6%96%B0%29.png',

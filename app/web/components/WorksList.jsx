@@ -99,8 +99,20 @@ export default class WorksList extends Component {
         return <span></span>
       }
     }
+    function WorkLabel(props) {
+      let { labelType } = props
+      if (labelType === 'new') {
+        return <span className={worksListStyle.newLabel}><span>New</span></span>
+      }
+      else if (labelType === 'top') {
+        return <span className={worksListStyle.topLabel}><span>Top</span></span>
+      }
+      else {
+        return <span></span>
+      }
+    }
     const worksListDom = this.props.works.map((workDetail, index) => {
-      let { type, title, info, id, coverImg } = workDetail
+      let { type, title, info, id, coverImg, labelType } = workDetail
       return (
         <Col
           className={worksListStyle.worksItem}
@@ -128,7 +140,8 @@ export default class WorksList extends Component {
                 src={coverImg}
                 alt=""
               />
-              <WorkCover type={type}></WorkCover>
+              <WorkLabel labelType={labelType}></WorkLabel>
+              {/* <WorkCover type={type}></WorkCover> */}
             </div>
             <div title={title} className={worksListStyle.worksTitle}>
               {title}
@@ -207,10 +220,10 @@ export default class WorksList extends Component {
           title={
             <div>
               {this.state.activeWork.title}
-              <WorkCover
+              {/* <WorkCover
                 type={this.state.activeWork.type}
                 classProp={worksListStyle.detailModalType}
-              ></WorkCover>
+              ></WorkCover> */}
             </div>
           }
           visible={this.state.isWorkDetailDialogVisible}

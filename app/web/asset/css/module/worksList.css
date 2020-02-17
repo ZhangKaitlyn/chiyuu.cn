@@ -4,7 +4,7 @@
   margin: 0 auto;
 }
 
-:global(.ant-dropdown-trigger){
+:global(.ant-dropdown-trigger) {
   display: none;
 }
 .classifiesList {
@@ -13,17 +13,17 @@
   text-align: center;
   display: inline-block;
 }
-.classifiesList + .classifiesList{
+.classifiesList + .classifiesList {
   margin-left: 48px;
 }
-:global(.ant-menu-horizontal > .ant-menu-item){
+:global(.ant-menu-horizontal > .ant-menu-item) {
   border: none;
   padding: 0;
 }
-:global(.ant-menu-horizontal > .ant-menu-item):hover{
+:global(.ant-menu-horizontal > .ant-menu-item):hover {
   border: none;
 }
-.classifiesList ul{
+.classifiesList ul {
   border: none;
 }
 .classifiesList li {
@@ -56,6 +56,56 @@
   position: absolute;
   right: 8px;
   top: 8px;
+}
+.topLabel {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 32px;
+  height: 48px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #aa2739;
+  padding-top: 20px;
+}
+.topLabel span {
+  z-index: 2;
+  position: relative;
+}
+.topLabel::after {
+  content: "";
+  border: 16px solid #aa2739;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+.newLabel {
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 32px;
+  height: 48px;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #38a6cd;
+  padding-top: 20px;
+}
+.newLabel span {
+  z-index: 2;
+  position: relative;
+}
+.newLabel::after {
+  content: "";
+  border: 16px solid #38a6cd;
+  border-bottom: 8px solid transparent;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
 }
 .worksTitle {
   text-align: center;
@@ -114,23 +164,23 @@
 }
 
 @media screen and (max-width: 576px) {
-  .worksList{
+  .worksList {
     padding: 0 16px;
   }
-  :global(.ant-dropdown-trigger){
+  :global(.ant-dropdown-trigger) {
     display: inline-block;
     color: #1d1d1d;
   }
-  .menuHideXs{
+  .menuHideXs {
     display: none;
   }
-  .classifiesList{
+  .classifiesList {
     margin-left: 32px;
   }
   .classifiesList li + li {
     margin-left: 32px;
   }
-  .worksItem{
+  .worksItem {
     margin-bottom: 24px;
   }
 }
