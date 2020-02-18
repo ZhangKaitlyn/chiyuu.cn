@@ -55,8 +55,8 @@ export default class WorksList extends Component {
     this.props.getWorks()
   }
 
-  toWorkDetailPage() {
-    console.log('toWorkDetailPage')
+  toWorkDetailPage(workDetail) {
+    window.location.href = '/detail?id=' + workDetail.id
   }
   showWorkDetailDialog() {
     console.log('showWorkDetailDialog')
@@ -70,7 +70,7 @@ export default class WorksList extends Component {
     })
     let { type } = workDetail
     if (type === 'multiple') {
-      this.toWorkDetailPage()
+      this.toWorkDetailPage(workDetail)
       return
     }
     this.showWorkDetailDialog()

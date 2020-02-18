@@ -32,9 +32,26 @@ export const works = [
     info: 'Web - 官网设计',
     coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/3.keepwork.png',
     images: [
-      'https://images.unsplash.com/photo-1564074621995-7c1f9a8ea9a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=676&q=80',
-      'https://images.unsplash.com/photo-1564084571423-7894bb30fe80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-      'https://images.unsplash.com/photo-1556911220-3bdc5f08618e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80'
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-1.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-2.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-3.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-4.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-5.gif',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-6.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-7.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-8.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-9.gif',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-10.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-11.gif',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-12.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-13.gif',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-14.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-15.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-16.gif',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-17.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-18.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-19.jpg',
+      'http://q5u4vw4fu.bkt.clouddn.com/web-kp-20.gif'
     ]
   },
   {
