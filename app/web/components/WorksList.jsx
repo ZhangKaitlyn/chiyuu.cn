@@ -165,7 +165,7 @@ export default class WorksList extends Component {
             <TweenOne
               animation={[
                 {
-                  delay: 1400,
+                  delay: 2700,
                   duration: 800,
                   opacity: 0,
                   type: 'from',
@@ -193,7 +193,7 @@ export default class WorksList extends Component {
               className={worksListStyle.combineBar}
               animation={[
                 {
-                  delay: 1300,
+                  delay: 2600,
                   duration: 800,
                   left: 0,
                   right: '100%',

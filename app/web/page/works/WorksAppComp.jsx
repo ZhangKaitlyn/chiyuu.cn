@@ -71,7 +71,7 @@ export default class WorksAppComp extends Component {
           <div className={worksPageStyle.combine}>
             <Texty
               className={worksPageStyle.title}
-              delay={1300}
+              delay={2600}
               duration={1000}
             >
               设计是一场永无止境的修行
@@ -79,7 +79,7 @@ export default class WorksAppComp extends Component {
             <TweenOne
               className={worksPageStyle.combineBar}
               animation={[
-                { delay: 1300, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
+                { delay: 2600, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
                 { duration: 1000, left: '100%', right: 0, type: 'to', ease: 'easeInOutExpo' }
               ]}
               onChange={this.handleAnimChange}
@@ -90,7 +90,7 @@ export default class WorksAppComp extends Component {
           <div className={worksPageStyle.combine}>
             <Texty
               className={worksPageStyle.info}
-              delay={1300}
+              delay={2600}
               duration={1000}
             >
               蔡小民 - UI设计&插画
@@ -98,7 +98,7 @@ export default class WorksAppComp extends Component {
             <TweenOne
               className={worksPageStyle.combineBar}
               animation={[
-                { delay: 1300, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
+                { delay: 2600, duration: 800, left: 0, right: '100%', type: 'from', ease: 'easeOutSine' },
                 { duration: 1000, left: '100%', right: 0, type: 'to', ease: 'easeInOutExpo' }
               ]}
             />
