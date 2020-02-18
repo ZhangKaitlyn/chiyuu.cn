@@ -24,6 +24,10 @@
 .drawerCol {
   text-align: right;
 }
+.memuBtn {
+  background-color: transparent;
+  color: #000 !important;
+}
 
 .drawerCol :global(.ant-btn) {
   border: none;
