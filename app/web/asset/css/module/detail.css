@@ -26,3 +26,6 @@
 .cover:last-child {
   margin-bottom: 0;
 }
+:global(.ant-back-top-content) {
+  border-radius: 0;
+}

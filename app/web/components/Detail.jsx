@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { BackTop } from 'antd'
 import MultipleImg from 'asset/images/Multiple.png'
 import detailCss from 'asset/css/module/detail.css'
 
@@ -38,6 +39,7 @@ export default class WorksList extends Component {
     })
     return (
       <div className={detailCss.container}>
+        <BackTop />
         <div className={detailCss.title}>
           {this.state.workDetail.title} <img src={MultipleImg} alt="" />
         </div>
