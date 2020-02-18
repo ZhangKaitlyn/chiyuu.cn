@@ -6,6 +6,9 @@ import aboutPageStyle from '@/asset/css/module/aboutPage.css'
 import aboutPic from 'asset/images/walk.gif'
 
 export default class About extends Component {
+  componentDidMount() {
+    document.title = 'chiyuu - about'
+  }
   render() {
     return (
       <div className={aboutPageStyle.aboutPage}>
