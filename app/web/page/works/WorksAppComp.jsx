@@ -35,17 +35,17 @@ export default class WorksAppComp extends Component {
           className={worksPageStyle.leftBlackBg}
           // paused={this.state.isAnimLoaded}
           animation={[
-            { delay: 2300, duration: 800, right: '100%', type: 'to', ease: 'easeOutQuad' }
+            { delay: 2600, duration: 800, right: '100%', type: 'to', ease: 'easeOutQuad' }
           ]}
         />
         <TweenOne className={worksPageStyle.rightBlackBg}
           animation={[
-            { delay: 2300, duration: 800, left: '100%', type: 'to', ease: 'easeOutQuad' }
+            { delay: 2600, duration: 800, left: '100%', type: 'to', ease: 'easeOutQuad' }
           ]}
         />
         <TweenOne className={worksPageStyle.fixedLogo}
           animation={[
-            { delay: 1200, duration: 150, opacity: 100, type: 'from' },
+            { delay: 1200, duration: 450, opacity: 100, type: 'from' },
             { duration: 150, opacity: 0, type: 'from', ease: 'easeInOutSine' },
             { duration: 200, opacity: 0, top: '30%', type: 'to', ease: 'easeInOutSine' }
           ]}
@@ -55,14 +55,14 @@ export default class WorksAppComp extends Component {
         <TweenOne
           className={worksPageStyle.line1}
           animation={[
-            { delay: 1200, duration: 300, top: '100%', type: 'from', ease: 'easeInOutSine' },
+            { delay: 1200, duration: 600, top: '100%', type: 'from', ease: 'easeInOutSine' },
             { duration: 150, opacity: 0, type: 'to' }
           ]}
         />
         <TweenOne
           className={worksPageStyle.line2}
           animation={[
-            { delay: 1500, duration: 700, top: '100%', type: 'from', ease: 'easeOutQuad' },
+            { delay: 1800, duration: 700, top: '100%', type: 'from', ease: 'easeOutQuad' },
             { duration: 100, opacity: 0, type: 'to' }
           ]}
         />
