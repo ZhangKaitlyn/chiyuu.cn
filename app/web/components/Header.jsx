@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Drawer, Button } from 'antd';
+import { Row, Col, Drawer, Button, Icon } from 'antd';
 import LogoImg from 'asset/images/logo.png'
 import PersonImg from 'asset/images/person.png'
 import headerStyles from 'asset/css/module/header.css'
@@ -51,7 +51,7 @@ export default class Header extends Component {
           </Col>
           <Col xs={8} sm={8} md={0} className={headerStyles.drawerCol}>
             {
-              this.state.visible ? (<Button icon="close" onClick={this.onClose}></Button>) : (<Button icon="menu" onClick={this.showDrawer}></Button>)
+              this.state.visible ? (<Icon type="close" onClick={this.onClose} />) : (<Icon type="menu" onClick={this.showDrawer} />)
             }
           </Col>
         </Row>
@@ -66,13 +66,13 @@ export default class Header extends Component {
         >
           <div className={headerStyles.drawerMenuItem}>
             <a href='/works'>作品</a>
-            <br/>
+            <br />
             <span>Works</span>
           </div>
           <div className={headerStyles.drawerMenuItem}>
-              <a href='/about'>关于</a>
-              <br/>
-              <span>About</span>
+            <a href='/about'>关于</a>
+            <br />
+            <span>About</span>
           </div>
         </Drawer>
       </div>

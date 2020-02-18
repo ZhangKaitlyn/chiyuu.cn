@@ -26,8 +26,11 @@
   text-align: right;
 }
 
-.drawerCol :global(.ant-btn) {
-  border: none;
+.drawerCol :global(.anticon) {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
   color: #1f1f1f;
   font-size: 16px;
 }
