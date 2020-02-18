@@ -38,7 +38,7 @@
   top: 0;
   bottom: 0;
   background-color: #000;
-  z-index: 1;
+  z-index: 999999;
 }
 .rightBlackBg {
   position: fixed;
@@ -47,7 +47,7 @@
   top: 0;
   bottom: 0;
   background-color: #000;
-  z-index: 1;
+  z-index: 999999;
 }
 .line1 {
   position: fixed;
@@ -57,7 +57,7 @@
   top: 54%;
   bottom: 0;
   left: 50%;
-  z-index: 2;
+  z-index: 999999;
 }
 .line2 {
   position: fixed;
@@ -67,7 +67,7 @@
   top: 0;
   bottom: 0;
   left: 50%;
-  z-index: 2;
+  z-index: 999999;
 }
 .fixedLogo {
   position: fixed;
@@ -77,7 +77,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -100%);
-  z-index: 2;
+  z-index: 999999;
 }
 
 @media screen and (max-width: 576px) {

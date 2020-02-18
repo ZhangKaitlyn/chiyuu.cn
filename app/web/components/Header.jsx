@@ -51,7 +51,7 @@ export default class Header extends Component {
           </Col>
           <Col xs={8} sm={8} md={0} className={headerStyles.drawerCol}>
             {
-              this.state.visible ? (<Button icon="close" onClick={this.onClose}></Button>) : (<Button icon="menu" className={headerStyles.memuBtn} onClick={this.showDrawer}></Button>)
+              this.state.visible ? (<Button icon="close" onClick={this.onClose}></Button>) : (<Button icon="menu" onClick={this.showDrawer}></Button>)
             }
           </Col>
         </Row>
