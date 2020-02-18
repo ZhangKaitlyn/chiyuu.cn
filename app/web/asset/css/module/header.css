@@ -71,10 +71,25 @@
   }
   .drawerMenuItem {
     margin-bottom: 118px;
+    text-align: center;
+    position: relative;
   }
   .drawerMenuItem a {
     font-size: 24px;
     color: #1d1d1d;
+  }
+  .drawerMenuItem span {
+    font-size: 12px;
+    color: #bbb;
+    line-height: 16px;
+  }
+  .drawerMenuItem:not(:last-child)::before {
+    content: "/";
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    font-size: 16px;
+    color: rgba(29, 29, 29, 0.2);
   }
   .drawerMenuItem:last-child {
     margin-bottom: 0;

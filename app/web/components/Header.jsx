@@ -66,9 +66,13 @@ export default class Header extends Component {
         >
           <div className={headerStyles.drawerMenuItem}>
             <a href='/works'>作品</a>
+            <br/>
+            <span>Works</span>
           </div>
           <div className={headerStyles.drawerMenuItem}>
-            <a href='/about'>关于</a>
+              <a href='/about'>关于</a>
+              <br/>
+              <span>About</span>
           </div>
         </Drawer>
       </div>
