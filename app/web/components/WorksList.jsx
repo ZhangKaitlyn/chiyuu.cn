@@ -56,10 +56,9 @@ export default class WorksList extends Component {
   }
 
   toWorkDetailPage(workDetail) {
-    window.location.href = '/detail?id=' + workDetail.id
+    window.open('/detail?id=' + workDetail.id)
   }
   showWorkDetailDialog() {
-    console.log('showWorkDetailDialog')
     this.setState({
       isWorkDetailDialogVisible: true
     })
