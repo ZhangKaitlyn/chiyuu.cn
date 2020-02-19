@@ -2,7 +2,6 @@ export const works = [
   {
     id: 1,
     type: 'multiple',
-    labelType: 'top',
     title: '作品集&简历[快速通道]',
     info: '其他-作品集',
     coverImg: 'http://q5u4vw4fu.bkt.clouddn.com/1.%E4%BD%9C%E5%93%81%E9%9B%86&%E7%AE%80%E5%8E%86.png',
