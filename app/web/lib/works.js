@@ -31,11 +31,14 @@ export const works = [
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-9-1.png',
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-9-2.png',
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10.png',
-      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10-1.png',
+      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10-1.gif',
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10-2.png',
-      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10-3.png',
+      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-10-3.gif',
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-11.png',
+      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-11-1.png',
+      'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-11-2.png',
       'http://q5u4vw4fu.bkt.clouddn.com/app-yiguan-12.png',
+
     ]
   },
   {
