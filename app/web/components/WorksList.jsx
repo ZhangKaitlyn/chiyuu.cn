@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col, Modal, Menu, Dropdown, Icon } from 'antd'
+import { Row, Col, Modal, Menu, Dropdown, Icon, message } from 'antd'
 import QueueAnim from 'rc-queue-anim'
 import TweenOne from 'rc-tween-one'
 import Texty from 'rc-texty'
@@ -32,10 +32,6 @@ export default class WorksList extends Component {
           value: '网页'
         },
         {
-          type: 'icon',
-          value: '图标'
-        },
-        {
           type: 'illustration',
           value: '插画'
         },
@@ -46,6 +42,10 @@ export default class WorksList extends Component {
         {
           type: 'photography',
           value: '摄影'
+        },
+        {
+          type: 'other',
+          value: '其他'
         }
       ],
       worksState: props.works
@@ -78,6 +78,9 @@ export default class WorksList extends Component {
     this.setState({
       isWorkDetailDialogVisible: false
     })
+  }
+  clickMenu() {
+    message.info('分类功能开发中')
   }
 
   render() {
@@ -151,7 +154,7 @@ export default class WorksList extends Component {
       )
     })
     const menu = mode => (
-      <Menu mode={mode || 'vertical'}>
+      <Menu mode={mode || 'vertical'} onClick={this.clickMenu}>
         {this.state.classifies.map(menuItem => {
           return <Menu.Item key={menuItem.type}>{menuItem.value}</Menu.Item>
         })}

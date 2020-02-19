@@ -34,6 +34,9 @@
 .classifiesList li + li {
   margin-left: 48px;
 }
+:global(.ant-message-info .anticon-info-circle) {
+  color: #1d1d1d;
+}
 
 .worksBoxList {
   margin-top: 48px;
