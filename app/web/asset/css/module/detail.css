@@ -2,6 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 36px 0 128px;
+}
+.coverList {
   text-align: center;
 }
 .title {
