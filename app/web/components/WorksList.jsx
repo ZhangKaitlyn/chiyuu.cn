@@ -127,7 +127,7 @@ export default class WorksList extends Component {
             className={worksListStyle.worksItemAnim}
             animation={[
               {
-                delay: 1500 + (index - 1) * 300,
+                delay: 2800 + (index - 1) * 300,
                 duration: 800,
                 top: 40,
                 opacity: 0,
