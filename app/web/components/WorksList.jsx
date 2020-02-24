@@ -167,7 +167,7 @@ export default class WorksList extends Component {
             <TweenOne
               animation={[
                 {
-                  delay: 2700,
+                  delay: 3400,
                   duration: 800,
                   opacity: 0,
                   type: 'from',
