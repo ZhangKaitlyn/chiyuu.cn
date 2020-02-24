@@ -11,12 +11,18 @@
   color: rgba(29, 29, 29, 0.5);
   margin: 48px 0 8px;
 }
-.tooltipContainer :global(.ant-tooltip-inner){
+.tooltipContainer :global(.ant-tooltip-inner) {
   color: #1d1d1d;
   background-color: #e8e8e8;
   font-size: 14px;
   box-shadow: none;
 }
-.tooltipContainer :global(.ant-tooltip-arrow){
+.tooltipContainer :global(.ant-tooltip-arrow) {
   border-top-color: #e8e8e8;
+}
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("asset/images/icon_sprites.svg");
 }
