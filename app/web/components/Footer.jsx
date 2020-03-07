@@ -8,8 +8,8 @@ export default class Footer extends Component {
         const iconsListDom = iconsListTitles.map((title, index) => {
             const positionSpace = -32 * index + 'px'
             const marginSpace = index > 0 ? '32px' : 0
-            return <Tooltip title={title} overlayClassName={footerStyle.tooltipContainer}>
-                <div className={footerStyle.icon} style={{ 'background-position': positionSpace, 'margin-left': marginSpace }}></div>
+            return <Tooltip key={index} title={title} overlayClassName={footerStyle.tooltipContainer}>
+                <div className={footerStyle.icon} style={{ 'backgroundPosition': positionSpace, 'marginLeft': marginSpace }}></div>
             </Tooltip >
         })
         return (
