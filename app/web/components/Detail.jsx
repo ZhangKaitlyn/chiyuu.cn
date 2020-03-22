@@ -27,6 +27,7 @@ export default class WorksList extends Component {
         this.setState({
           workDetail
         })
+        window.document.title = workDetail.title
         break
       }
     }
