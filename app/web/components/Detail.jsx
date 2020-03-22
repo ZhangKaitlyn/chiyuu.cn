@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BackTop } from 'antd'
 import detailCss from 'asset/css/module/detail.css'
+import BackTopIcon from 'asset/images/backTop.svg'
 
 
 export default class WorksList extends Component {
@@ -39,7 +40,9 @@ export default class WorksList extends Component {
     })
     return (
       <div className={detailCss.container}>
-        <BackTop />
+        <BackTop>
+          <img className={detailCss.backTopIcon} src={BackTopIcon} />
+        </BackTop>
         <div className={detailCss.title}>
           {this.state.workDetail.title}
         </div>
