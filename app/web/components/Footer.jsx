@@ -18,7 +18,7 @@ export default class Footer extends Component {
                     {iconsListDom}
                 </div>
                 <div className={footerStyle.recordNoRow}>鄂ICP备18001822号-1</div>
-                <div>&copy; 2019 Chiyu. 特别感谢 @ZhangKaitlyn</div>
+                <div>&copy; 2020 Chiyu. 特别感谢 @ZhangKaitlyn</div>
             </div >
         )
     }

@@ -27,7 +27,7 @@ export default class About extends Component {
                   <span className={aboutPageStyle.time}>2018.3 - 至今</span>
                 </div>
                 <div className={aboutPageStyle.intro}>
-                  负责公司网站视觉和体验优化和迭代，参与并主导知识引擎app的设计
+                  负责公司网站视觉和体验优化和迭代
                 </div>
               </div>
               <div className={aboutPageStyle.infoItem}>
