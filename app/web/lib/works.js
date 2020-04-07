@@ -90,8 +90,9 @@ export const works = [
   {
     id: 2,
     type: 'multiple',
+    labelType: 'new',
     title: '一罐APP「重设计」',
-    info: 'app - redesign',
+    info: 'UI - app界面',
     coverImg: 'http://img.chiyuu.cn/2.%E4%B8%80%E7%BD%90app%28%E6%96%B0%29.png',
     images: [
       'http://img.chiyuu.cn/app-yiguan-1.png',
@@ -161,7 +162,7 @@ export const works = [
     id: 4,
     type: 'multiple',
     title: 'AngLee Film Studio',
-    info: 'Web - 概念设计',
+    info: 'Web - 企业官网',
     coverImg: 'http://img.chiyuu.cn/4.anglee.png',
     images: [
       'http://img.chiyuu.cn/web-anglee-1.png',
@@ -193,17 +194,13 @@ export const works = [
   {
     id: 6,
     type: 'multiple',
-    title: '简笔画日记  [GIF]"',
+    title: '简笔画日记  [GIF]',
     info: '插画 - 简笔画',
     coverImg: 'http://img.chiyuu.cn/6.%E7%AE%80%E7%AC%94%E7%94%BB%E6%97%A5%E8%AE%B0.png',
     images: [
-      'http://img.chiyuu.cn/sticky-7.gif',
-      'http://img.chiyuu.cn/sticky-6.gif',
-      'http://img.chiyuu.cn/sticky-5.gif',
-      'http://img.chiyuu.cn/sticky-4.gif',
-      'http://img.chiyuu.cn/sticky-3.gif',
-      'http://img.chiyuu.cn/sticky-2.gif',
-      'http://img.chiyuu.cn/sticky-1.gif'
+      'http://img.chiyuu.cn/portfolio-3.png',
+      'http://img.chiyuu.cn/portfolio-jianbi-1.gif',
+      'http://img.chiyuu.cn/portfolio-jianbi-2.gif'
     ]
   },
   {
@@ -213,15 +210,12 @@ export const works = [
     info: '插画 - 手绘',
     coverImg: 'http://img.chiyuu.cn/7.%E6%89%8B%E7%BB%98%E6%8F%92%E7%94%BB.png',
     images: [
-      'http://img.chiyuu.cn/Hp-1.png',
-      'http://img.chiyuu.cn/Hp-2.png',
-      'http://img.chiyuu.cn/Hp-3.png',
-      'http://img.chiyuu.cn/Hp-4.png',
-      'http://img.chiyuu.cn/Hp-5.png',
-      'http://img.chiyuu.cn/Hp-6.png',
-      'http://img.chiyuu.cn/Hp-7.png',
-      'http://img.chiyuu.cn/Hp-8.png',
-      'http://img.chiyuu.cn/Hp-9.png'
+      'http://img.chiyuu.cn/portfolio-chahua-1.png',
+      'http://img.chiyuu.cn/portfolio-chahua-2.png',
+      'http://img.chiyuu.cn/portfolio-chahua-3.png',
+      'http://img.chiyuu.cn/portfolio-chahua-4.png',
+      'http://img.chiyuu.cn/portfolio-chahua-5.png',
+
     ]
   },
   // {
@@ -268,8 +262,8 @@ export const works = [
   {
     id: 11,
     type: 'multiple',
-    title: '办会家品牌标识',
-    info: '平面 - 品牌',
+    title: '汉阳区美术馆设计',
+    info: '其他 - 建筑设计',
     coverImg: 'http://img.chiyuu.cn/%E7%BE%8E%E6%9C%AF%E9%A6%86%E5%B0%81%E9%9D%A2.png',
     images: [
       'http://img.chiyuu.cn/meishuguan-1.jpg',

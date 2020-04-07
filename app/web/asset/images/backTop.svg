@@ -1,1 +1,11 @@
-<?xml version="1.0" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg t="1584842062799" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="11579" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128"><defs><style type="text/css"></style></defs><path d="M257.28 616.192l46.336 46.336L512 454.093l208.384 208.435 46.336-46.336-208.384-208.384L512 361.472l-46.336 46.336z" p-id="11580"></path></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="38px" viewBox="0 0 64 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>路径</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="上" transform="translate(0.125000, 0.125000)" fill="#FFFFFF" fill-rule="nonzero">
+            <polygon id="路径" points="0.035 31.899 5.827 37.691 31.875 11.636625 57.923 37.691 63.715 31.899 37.667 5.851 31.875 0.059 26.083 5.851"></polygon>
+        </g>
+    </g>
+</svg>
